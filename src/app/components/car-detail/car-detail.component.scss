@@ -1,0 +1,15 @@
+.car-detail-container{
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  border: 2px rgb(24, 0, 0) solid;
+  padding: 8px;
+  width: 500px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background-color: rgb(61, 255, 35);
+}
+
+.unavailable{
+  background-color: rgb(255, 35, 35);
+}

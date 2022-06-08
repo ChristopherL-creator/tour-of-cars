@@ -11,6 +11,8 @@ export class CarListComponent implements OnInit {
 
   carsArray: Car[] = [];
 
+  selectedCar?: Car;
+
   constructor(private carService: CarApiService) { } // gli dobbiamo dare variabile di visibilità privatr/public
 
   ngOnInit(): void {
@@ -21,7 +23,7 @@ export class CarListComponent implements OnInit {
   }
 
   openDetail(car: Car){ // devo specificare il tipo di car
-      console.log(car);
+      this.selectedCar = car;
 
   }
 
